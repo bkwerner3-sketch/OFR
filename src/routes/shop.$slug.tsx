@@ -67,7 +67,11 @@ function SingleProduct({
           <h1 className="mb-2 font-[family-name:var(--font-heading)] text-3xl font-bold text-charcoal sm:text-4xl">
             {product.name}
           </h1>
-
+          {product.exhibit && product.fabric && (
+            <p className="mb-5 font-[family-name:var(--font-accent)] text-base italic text-terracotta">
+              {product.exhibit} · {product.fabric}
+            </p>
+          )}
           <p className="mb-6 font-[family-name:var(--font-heading)] text-2xl text-terracotta">
             {product.price > 0 ? "$" + product.price : "Price TBD"}
           </p>
@@ -203,7 +207,11 @@ function SetLayout({
       <h1 className="mb-2 text-center font-[family-name:var(--font-heading)] text-3xl font-bold text-charcoal sm:text-4xl">
         {lineName} — Shop the Look
       </h1>
-
+      {set.exhibit && set.fabric && (
+        <p className="mb-4 text-center font-[family-name:var(--font-accent)] text-base italic text-terracotta">
+          {set.exhibit} · {set.fabric}
+        </p>
+      )}
       <p className="mb-12 text-center font-[family-name:var(--font-accent)] text-base italic text-charcoal/50">
         Choose your pieces individually or add both to complete the set — save $
         {savings} when you buy both.

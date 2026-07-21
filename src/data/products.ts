@@ -15,6 +15,8 @@ export interface Product {
   isFeatured: boolean;
   setShirtSlug?: string;
   setShortsSlug?: string;
+  exhibit?: string;
+  fabric?: string;
 }
 
 export const products: Product[] = [
@@ -35,6 +37,8 @@ export const products: Product[] = [
     designInspiration:
       "The star-like spotting pattern of the whale shark — the ocean's largest fish and gentlest giant.",
     isFeatured: true,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "whale-shark-chambray-shorts",
@@ -53,6 +57,8 @@ export const products: Product[] = [
     designInspiration:
       "The star-like spotting pattern of the whale shark — the ocean's largest fish and gentlest giant.",
     isFeatured: false,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "wobbegong-shark-chambray-shirt",
@@ -71,6 +77,8 @@ export const products: Product[] = [
     designInspiration:
       "The ornate, carpet-like camouflage of the wobbegong shark, hidden in plain sight on the reef floor.",
     isFeatured: true,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "wobbegong-shark-chambray-shorts",
@@ -89,6 +97,8 @@ export const products: Product[] = [
     designInspiration:
       "The ornate, carpet-like camouflage of the wobbegong shark, hidden in plain sight on the reef floor.",
     isFeatured: false,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "leopard-shark-chambray-shirt",
@@ -107,6 +117,8 @@ export const products: Product[] = [
     designInspiration:
       "The elegant saddle markings and spots of the leopard shark, gliding through shallow coastal waters.",
     isFeatured: true,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "leopard-shark-chambray-shorts",
@@ -125,6 +137,8 @@ export const products: Product[] = [
     designInspiration:
       "The elegant saddle markings and spots of the leopard shark, gliding through shallow coastal waters.",
     isFeatured: false,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "jaguar-crochet-shirt",
@@ -143,6 +157,8 @@ export const products: Product[] = [
     designInspiration:
       "The rosette patterns of the jaguar — the Americas' most powerful big cat — translated into crochet stitchwork.",
     isFeatured: true,
+    exhibit: "Savanna",
+    fabric: "Crochet",
   },
   {
     slug: "jaguar-crochet-shorts",
@@ -161,6 +177,8 @@ export const products: Product[] = [
     designInspiration:
       "The rosette patterns of the jaguar — the Americas' most powerful big cat — translated into crochet stitchwork.",
     isFeatured: false,
+    exhibit: "Savanna",
+    fabric: "Crochet",
   },
   {
     slug: "whale-shark-chambray-set",
@@ -181,6 +199,8 @@ export const products: Product[] = [
     designInspiration:
       "The star-like spotting pattern of the whale shark — the ocean's largest fish and gentlest giant. Complete the look with the matching set.",
     isFeatured: true,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "wobbegong-shark-chambray-set",
@@ -201,6 +221,8 @@ export const products: Product[] = [
     designInspiration:
       "The ornate, carpet-like camouflage of the wobbegong shark, hidden in plain sight on the reef floor. The complete set for maximum impact.",
     isFeatured: true,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "leopard-shark-chambray-set",
@@ -221,6 +243,8 @@ export const products: Product[] = [
     designInspiration:
       "The elegant saddle markings and spots of the leopard shark, gliding through shallow coastal waters. The complete matching set.",
     isFeatured: true,
+    exhibit: "Open Ocean",
+    fabric: "Chambray",
   },
   {
     slug: "jaguar-crochet-set",
@@ -241,6 +265,8 @@ export const products: Product[] = [
     designInspiration:
       "The rosette patterns of the jaguar — the Americas' most powerful big cat — translated into crochet stitchwork. The complete head-to-toe look.",
     isFeatured: true,
+    exhibit: "Savanna",
+    fabric: "Crochet",
   },
 ];
 

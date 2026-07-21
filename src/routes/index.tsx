@@ -12,6 +12,15 @@ function Home() {
     <>
       <HeroBanner />
 
+      {/* Collection 001 Teaser */}
+      <section className="border-b border-sand/30 bg-white py-10">
+        <div className="mx-auto max-w-7xl px-6 text-center">
+          <p className="font-[family-name:var(--font-accent)] text-lg italic text-terracotta">
+            Explore Collection 001 — Coastal, Safari, our debut pairing of Open Ocean and Savanna exhibits.
+          </p>
+        </div>
+      </section>
+
       <FeaturedProducts />
 
       {/* Brand Values */}
