@@ -20,6 +20,7 @@ function Shop() {
   const [gender, setGender] = useState<"all" | "men" | "women" | "unisex">(
     "all",
   );
+  const [exhibit, setExhibit] = useState<"all" | "Open Ocean" | "Savanna">("all");
 
   let filtered: Product[] = products;
 
@@ -28,6 +29,9 @@ function Shop() {
   }
   if (gender !== "all") {
     filtered = filtered.filter((p) => p.gender === gender);
+  }
+  if (exhibit !== "all") {
+    filtered = filtered.filter((p) => p.exhibit === exhibit);
   }
 
   const categories: { value: typeof category; label: string }[] = [
@@ -44,16 +48,25 @@ function Shop() {
     { value: "unisex", label: "Unisex" },
   ];
 
+  const exhibits: { value: typeof exhibit; label: string }[] = [
+    { value: "all", label: "All Exhibits" },
+    { value: "Open Ocean", label: "Open Ocean" },
+    { value: "Savanna", label: "Savanna" },
+  ];
+
   return (
     <main className="mx-auto max-w-7xl px-6 py-16">
-      {/* Header */}
+      {/* Collection 001 Banner */}
       <div className="mb-10 text-center">
-        <p className="mb-2 font-[family-name:var(--font-accent)] text-base italic text-terracotta">
-          The Collection
+        <p className="mb-3 font-[family-name:var(--font-accent)] text-sm italic tracking-wide text-charcoal/50">
+          Natural History
         </p>
-        <h1 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-charcoal">
-          Shop All
+        <h1 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-charcoal sm:text-5xl">
+          Collection 001 — Coastal, Safari
         </h1>
+        <p className="mt-3 font-[family-name:var(--font-accent)] text-lg italic text-terracotta">
+          Open Ocean &amp; Savanna
+        </p>
       </div>
 
       {/* Filters */}
@@ -88,6 +101,23 @@ function Shop() {
               }`}
             >
               {g.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Exhibit filter */}
+        <div className="flex gap-1 rounded-sm border border-sand/50 p-1">
+          {exhibits.map((ex) => (
+            <button
+              key={ex.value}
+              onClick={() => setExhibit(ex.value)}
+              className={`rounded-sm px-4 py-2 text-sm font-medium tracking-wide uppercase transition-colors ${
+                exhibit === ex.value
+                  ? "bg-sage text-white"
+                  : "text-charcoal/60 hover:text-sage"
+              }`}
+            >
+              {ex.label}
             </button>
           ))}
         </div>
