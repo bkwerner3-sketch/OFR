@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,500&family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-linen: #F7F3ED;
+  --color-charcoal: #2C2420;
+  --color-terracotta: #C67B5C;
+  --color-sage: #8B9E7C;
+  --color-sand: #E8DFD3;
+  --color-amber: #A0523B;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-accent: 'Cormorant Garamond', Garamond, serif;
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-linen text-charcoal antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    @apply text-charcoal;
+  }
+}
