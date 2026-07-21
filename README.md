@@ -35,3 +35,5 @@ src/
   styles/        # Tailwind CSS
 public/          # Static assets (images, logos)
 ```
+
+<!-- OFR premium resort wear -->
